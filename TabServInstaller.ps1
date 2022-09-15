@@ -42,6 +42,6 @@ If (Test-Path $filedownload) {
 
 Invoke-Expression "explorer '/select,$filedownload'"
 
-#Invoke-Expression "$filedownload $install_args"
-
 Write-Host "This script will now install Tableau Server version $version in the default location"
+
+Invoke-Expression "$filedownload $install_args"
